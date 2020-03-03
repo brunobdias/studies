@@ -1,16 +1,17 @@
-If you are from another country, and you get errors about ASCII encodings, then put this at the top of your Python scripts:
+
+NOTE: If you are from another country, and you get errors about ASCII encodings, then put this at the top of your Python scripts:
 
 # -*- coding: utf-8 -*-
 It will fix them so that you can use Unicode UTF-8 in your scripts without a problem.
 
 #######################################################################################
-
+NOTE:
 # = An "octothorpe" is also called a "pound", "hash", "mesh", or any number of names. Pick the one that makes you chill out.
 
 _ = The _ in space_in_a_car is called an underscore character. We use this character a lot to put an imaginary space between words in variable names. (snake_case)
 
 #######################################################################################
-
+NOTE:
 Math Simbols
 
 + plus
@@ -38,12 +39,12 @@ It's not really rounding down; it's just dropping the fractional part after the 
 
 #################################################################################################
 
-What is the difference between = (single-equal) and == (double-equal)?
+NOTE: What is the difference between = (single-equal) and == (double-equal)?
 The = (single-equal) assigns the value on the right to a variable on the left. The == (double-equal) tests if two things have the same value.
 
 #################################################################################################
 
-Error Tips
+NOTE: Error Tips
 
 If I get this error TypeError: 'str' object is not callable.
 You probably forgot the % between the string and the list of variables.,
@@ -53,21 +54,25 @@ You need to make sure that the line of code is exactly the same. What happens in
 
 #################################################################################################
 
-How can I round a floating point number?
+NOTE: How can I round a floating point number?
 You can use the round() function like this: round(1.7333).
 
 #################################################################################################
 
-Can I make a variable like this: 1 = 'Zed Shaw'?
+NOTE: Can I make a variable like this: 1 = 'Zed Shaw'?
 No, 1 is not a valid variable name. They need to start with a character, so a1 would work, but 1 will not.
 
 #################################################################################################
 
-String bigger then 80 characters in Python is bad style. So split in two.
+NOTE: String bigger then 80 characters in Python is bad style. So split in two.
+
+#################################################################################################
+NOTE: When put a , (comma) at the end of a print line, that doesn't end the line with a new line
+character and go to the next line, like "\n" command
 
 #################################################################################################
 
-Escape Sequences
+NOTE: Escape Sequences
 
 This is the list of all the escape sequences Python supports. You may not use many of these, but
 memorize their format and what they do anyway. Also try them out in some strings to see if you
@@ -89,7 +94,7 @@ Escape What it does.
 \ooo Character with octal value oo
 \xhh Character with hex value hh
 
-Tip
+NOTE: 
 When I use a %r format none of the escape sequences work.
 That’s because %r is printing out the raw representation of what you typed, which is going to
 include the original escape sequences. Use %s instead. Always remember this: %r is for debugging;
