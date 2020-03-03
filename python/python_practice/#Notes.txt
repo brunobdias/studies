@@ -1,0 +1,69 @@
+If you are from another country, and you get errors about ASCII encodings, then put this at the top of your Python scripts:
+
+# -*- coding: utf-8 -*-
+It will fix them so that you can use Unicode UTF-8 in your scripts without a problem.
+
+#######################################################################################
+
+# = An "octothorpe" is also called a "pound", "hash", "mesh", or any number of names. Pick the one that makes you chill out.
+
+_ = The _ in space_in_a_car is called an underscore character. We use this character a lot to put an imaginary space between words in variable names. (snake_case)
+
+#######################################################################################
+
+Math Simbols
+
++ plus
+- minus
+/ slash
+* asterisk
+% percent
+< less-than
+> greater-than
+<= less-than-equal
+>= greater-than-equal
+
+Why is the % character a "modulus" and not a "percent"?
+Mostly that's just how the designers chose to use that symbol. In normal writing you are correct to read it as a "percent." In programming this calculation is typically done with simple division and the / operator. The % modulus is a different operation that just happens to use the % symbol.
+
+How does % work?
+Another way to say it is, "X divided by Y with J remaining." For example, "100 divided by 16 with 4 remaining." The result of % is the J part, or the remaining part.
+
+What is the order of operations?
+In the United States we use an acronym called PEMDAS which stands for Parentheses Exponents
+Multiplication Division Addition Subtraction. That's the order Python follows as well.
+
+Why does / (divide) round down?
+It's not really rounding down; it's just dropping the fractional part after the decimal. Try doing 7.0 / 4.0 and compare it to 7 / 4 and you'll see the difference.
+
+#################################################################################################
+
+What is the difference between = (single-equal) and == (double-equal)?
+The = (single-equal) assigns the value on the right to a variable on the left. The == (double-equal) tests if two things have the same value.
+
+#################################################################################################
+
+Error Tips
+
+If I get this error TypeError: 'str' object is not callable.
+You probably forgot the % between the string and the list of variables.,
+
+I get the error TypeError: not all arguments converted during string formatting.
+You need to make sure that the line of code is exactly the same. What happens in this error is you have more % format characters in the string than variables to put in them. Go back and figure out what you did wrong.
+
+#################################################################################################
+
+How can I round a floating point number?
+You can use the round() function like this: round(1.7333).
+
+#################################################################################################
+
+Can I make a variable like this: 1 = 'Zed Shaw'?
+No, 1 is not a valid variable name. They need to start with a character, so a1 would work, but 1 will not.
+
+#################################################################################################
+
+String bigger then 80 characters in Python is bad style. So split in two.
+
+#################################################################################################
+
