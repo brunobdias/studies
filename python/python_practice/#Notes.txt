@@ -89,4 +89,10 @@ Escape What it does.
 \ooo Character with octal value oo
 \xhh Character with hex value hh
 
+Tip
+When I use a %r format none of the escape sequences work.
+That’s because %r is printing out the raw representation of what you typed, which is going to
+include the original escape sequences. Use %s instead. Always remember this: %r is for debugging;
+%s is for displaying.
+
 ######################################################################################################
